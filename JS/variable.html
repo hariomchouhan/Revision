@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Variable Concept</h1>
+
+    <script>
+      // check
+      console.log("hello");
+
+      // what is a variable?
+      // A variable is a named container for storing data values in JavaScript.
+      // It allows you to store, change, and access Information while your program runs.
+
+      // Variable Lifecycle
+      // 1. Declaration -> name is reserved.
+      // 2. Initialization -> value is assigned.
+      // 3. Usage -> value is accessed or modified.
+
+      let gender = "Male";
+      console.log(gender); // Male
+      console.log("gender"); // gender
+
+      let num = 3;
+      console.log(num); // 3
+      console.log(num + 3); // 6
+
+      // let gender = "Female"; give error
+      gender = "Female";
+      console.log(gender); // Female
+
+      var x = 10; // Function-scoped
+      let y = 20; // Block-scoped
+      const z = 30; // Constant value
+
+      y = 25; // ✅ allowed
+      // z = 40;        // ❌ Error - cannot reassign a const
+    </script>
+  </body>
+</html>
