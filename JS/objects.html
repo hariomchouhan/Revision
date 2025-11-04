@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Object Concept</h1>
+
+    <script>
+      let personName = "Hariom";
+      let age = 23;
+      let profession = "React Native Developer";
+
+      //   console.log(personName);
+      //   console.log(age);
+      //   console.log(profession);
+
+    //   -----------------------------------------------------------
+      // object comes in picture
+      let person = {
+        name: "Hariom",
+        age: 23,
+        profession: "React Native Developer",
+      };
+
+      // original object
+      console.log(person);
+      //   access value
+      console.log(person.name);
+      // change/modify/update value
+      person.age = 24;
+      console.log(person);
+
+      // add more info
+      person.maritalStatus = "Yes";
+      console.log(person);
+
+      // delete value
+      delete person.age;
+      console.log(person);
+    </script>
+  </body>
+</html>
