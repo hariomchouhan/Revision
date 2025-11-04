@@ -17,8 +17,9 @@
       //   console.log(age);
       //   console.log(profession);
 
-    //   -----------------------------------------------------------
+      //   -----------------------------------------------------------
       // object comes in picture
+      let key = "name";
       let person = {
         name: "Hariom",
         age: 23,
@@ -40,6 +41,51 @@
       // delete value
       delete person.age;
       console.log(person);
+
+      // another way access value
+      console.log(person["name"]);
+
+      console.log(person[key]);
+
+      console.log("-------------nested object-----------------");
+
+      let person1 = {
+        name: "John",
+        age: 23,
+        profession: "React Native Developer",
+        address: {
+          house: 124,
+          road: "adb",
+        },
+        greet: function test() {
+          console.log(`Hello ${person1.name}`);
+          return `Hello ${person1.name}`;
+        },
+      };
+
+      console.log(person1);
+      console.log(person1.address);
+      console.log(person1.address.house);
+
+      //   function in object
+      console.log(person1);
+      console.log(person1.greet);
+      console.log(person1.greet());
+
+      console.log(typeof console);
+
+    //   alert("Hello");
+      // dot notation
+      // square bracket notation
+      // nested objects
+      // methods
+      // alert and console.log
+      // builtin function, buildin objects
+
+      // Explore more buildin function or methods
+
+      const res = Math.random()*100;
+      console.log(res);
     </script>
   </body>
 </html>
