@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>Local Storage Concept</h1>
+
+    <script>
+      // var - Temp
+
+      // let msg = "hello"
+      // localStorage.setItem('hey', msg)
+
+      // let getmsg = localStorage.getItem('hey')
+      // console.log(getmsg);
+
+      let person = {
+        name: "Hariom",
+        age: 23,
+        profession: "React Native Developer",
+      };
+
+      console.log(person);
+      const str = JSON.stringify(person)
+      localStorage.setItem("obj", str);
+
+      const jsonstr = localStorage.getItem('obj')
+      console.log(jsonstr);
+      const res = JSON.parse(jsonstr);
+      console.log(res);
+      console.log(res.name);
+
+      localStorage.removeItem('obj')
+      
+    </script>
+  </body>
+</html>
